@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .foto {
   height: 400px;
   width: 300px;
@@ -19,8 +26,25 @@
   position: relative;
 }
 
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+
+}
+
 .texto {
   height: 400px;
   width: 300px;
   background-color: rgb(37, 53, 57);
+  border-bottom-right-radius:2px;
+  border-top-right-radius: 25px;
+  padding: 20px 20px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
