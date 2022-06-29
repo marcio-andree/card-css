@@ -28,11 +28,19 @@
 
 h1 {
   font-family: 'Berkshire Swash', cursive;
+  color: rgb(82, 161, 128);
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    color: rgb(223, 209, 209);
+
 }
 
 p{
   font-family: 'Roboto', sans-serif;
   text-align: justify;
+  color: rgb(223, 209, 209);
 
 }
 
@@ -40,11 +48,24 @@ p{
   height: 400px;
   width: 300px;
   background-color: rgb(37, 53, 57);
-  border-bottom-right-radius:2px;
+  border-bottom-right-radius:25px;
   border-top-right-radius: 25px;
   padding: 20px 20px;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
 }
+.texto ul li{
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  color: rgb(223, 209, 209);
+  list-style: inside;
+}
+
+.textos form{
+
+}
+
