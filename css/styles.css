@@ -10,12 +10,6 @@ body {
   padding-top: 100px;
 }
 
-/* .card-duplo
-  margin: 0%;
-  width: 600px;
-  display: flex;
-*/
-
 .card-duplo {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -29,7 +23,7 @@ body {
 .foto {
   height: 400px;
   width: 300px;
-  grid-area: foto;
+  grid-area: "foto";
 }
 
 .foto img {
@@ -71,7 +65,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-  grid-area: textos;
+  grid-area: "texto";
 }
 .texto ul li {
   font-family: "Roboto", sans-serif;
@@ -120,4 +114,43 @@ a:visited {
 
 .texto ul > li {
   list-style-type: none;
+}
+
+/* Media query */
+
+@media screen and (max-width: 800px) {
+
+  body{
+    padding: 50px 20px;
+  }
+  .card-duplo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "foto" "texto";
+  }
+  .foto {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 25px;
+  }
+  .foto img {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 0;
+  }
+  .texto {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .texto p,
+  .texto ul li {
+    font-size: 20px;
+  }
+  .texto form input,
+  .texto form button {
+    height: 40px;
+
+  }
 }
