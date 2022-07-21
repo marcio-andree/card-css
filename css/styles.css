@@ -1,23 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Roboto&display=swap");
+* {
   box-sizing: border-box;
   margin: 0;
-  padding:0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
 }
 
-/* .card-duplo {
+/* .card-duplo
   margin: 0%;
   width: 600px;
   display: flex;
-} */
+*/
 
-.card-duplo{
+.card-duplo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
- grid-template-areas: "foto textos";
- width: 600px;
-
+  grid-template-areas: "foto textos";
+  width: 600px;
+  box-shadow: 2px 2px 10px 1px;
+  border-radius: 25px;
 }
 
 .foto {
@@ -26,40 +32,37 @@
   grid-area: foto;
 }
 
-
 .foto img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-top-left-radius: 25px ;
+  border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   position: relative;
   margin: 0%;
 }
 
 h1 {
-  font-family: 'Berkshire Swash', cursive;
+  font-family: "Berkshire Swash", cursive;
   color: rgb(82, 161, 128);
 }
-h3{
-  font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    color: rgb(223, 209, 209);
-
-}
-
-p{
-  font-family: 'Roboto', sans-serif;
+h3 {
+  font-family: "Roboto", sans-serif;
   text-align: justify;
   color: rgb(223, 209, 209);
+}
 
+p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  color: rgb(223, 209, 209);
 }
 
 .texto {
   height: 400px;
   width: 300px;
   background-color: rgb(37, 53, 57);
-  border-bottom-right-radius:25px;
+  border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
   padding: 20px 20px;
   font-family: sans-serif;
@@ -68,47 +71,53 @@ p{
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-  grid-area: textos ;
+  grid-area: textos;
 }
-.texto ul li{
-  font-family: 'Roboto', sans-serif;
+.texto ul li {
+  font-family: "Roboto", sans-serif;
   text-align: justify;
   color: rgb(223, 209, 209);
   list-style: inside;
 }
 
-.texto form{
+.texto form {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 5px;
 }
 
-.texto form input{
+.texto form input {
   height: 25px;
   border-radius: 8px;
   border: none;
   padding: 0px 10px;
 }
-.texto form input ::placeholder{
+.texto form input ::placeholder {
   font-size: 12px;
   color: rgb(223, 209, 209);
 }
-.texto form input:focus{
 
-}
-.texto form button{
+.texto form button {
   height: 25px;
   border-radius: 8px;
   border: none;
-  background-color:rgb(100, 136, 121) ;
+  background-color: rgb(100, 136, 121);
   color: rgb(231, 221, 221);
   font-size: 15px;
   cursor: pointer;
 }
-.texto form button:hover{
-  background-color: rgb(124, 172, 152) ;
+.texto form button:hover {
+  background-color: rgb(124, 172, 152);
   font: rgb(255, 255, 255);
-
 }
 
+a a:hover,
+a:visited {
+  color: unset;
+  text-decoration: none;
+}
+
+.texto ul > li {
+  list-style-type: none;
+}
